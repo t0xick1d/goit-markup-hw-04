@@ -101,15 +101,26 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.contacts-icon{
+.contacts-envelope{
+  fill: var(--text-silver-color);
+}
+.contacts-envelope svg{
   width: 16px;
   height: 12px;
   margin-right: 10px;
+}
+.contacts-phone{
   fill: var(--text-silver-color);
+}
+.contacts-phone svg{
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 .contacts a:hover,
 .contacts a:focus,
-.contacts-icon:hover {
+.contacts-envelope:hover,
+.contacts-phone:hover {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -219,6 +230,9 @@ a {
 }
 .teamul .item{
   margin-right: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .teamul .item:last-child{
   margin-right: 0px;
@@ -253,8 +267,12 @@ a {
 .ul-link-team{
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .link-team-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   margin-right: 10px;
@@ -278,27 +296,34 @@ a {
   text-align: center;
   margin-bottom: 50px;
 }
-.ulclients{
+.ulclients {
   display: flex;
-  justify-content: center;
 }
 .li-client-icon{
-  justify-content: center;
   margin-right: 30px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.li-client-icon a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
 }
 .client-icon{
   fill: rgba(175, 177, 184, 1);
+}
+.client-icon svg{
   width: 106px;
   height: 60px;
-  
 }
-
 .li-client-icon:hover{
   border: 1px solid var(--accent-color);
-  border-radius: 4px;
+}
+.client-icon:hover{
+  fill: var(--accent-color);
 }
 
 /* footer */
@@ -353,6 +378,9 @@ a {
   display: flex;
 }
 .li-footer-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -411,6 +439,8 @@ a {
   }
 .filterbutton button:hover,
 .filterbutton button:focus{
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   color: var(--primary-white-color);
   background: var(--accent-color);
 }
@@ -426,6 +456,10 @@ a {
 .ulexampales .item{
   margin-right: 30px;
   margin-bottom: 30px; 
+}
+.ulexampales .item:hover{
+  outline: 1px solid #EEEEEE;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .ulexampales .item:nth-child(3n){
   margin-right: 0px;
