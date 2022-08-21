@@ -136,7 +136,7 @@ a {
     to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
-  ),url(/img/backgrounghero.jpg);
+  ),url(../img/backgrounghero.jpg);
   background-repeat: no-repeat;
 }
 .mainsection{
@@ -270,26 +270,31 @@ a {
   margin-bottom: 30px;
 }
 .link-team-icon{
+  margin-right: 10px;
+}
+.link-team-icon a {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
-  margin-right: 10px;
+  fill: rgba(175, 177, 184, 1);
 }
 /* fill="#afb1b8" style="fill:var(--color1, #afb1b8)" */
 .link-team-icon:last-child{
   margin-right: 0px;
 }
-.team-icon{
+.team-icon svg{
   width: 20px;
   height: 20px;
-  fill: rgba(175, 177, 184, 1);
-}
-.link-team-icon:hover {
   
+}
+.team-icon:hover{
   border-radius: 50%;
   background-color: var(--accent-color);
+}
+.team-icon:hover{
+  fill: var(--bg-color-button);
 }
 /* section clients */
 .clients h2{
@@ -308,7 +313,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
   width: 170px;
   height: 92px;
 }
@@ -377,6 +381,12 @@ a {
 .ul-link-footer{
   display: flex;
 }
+.ul-link-footer li{
+  margin-right: 10px;
+}
+.ul-link-footer li:last-child{
+  margin-right: 0px;
+}
 .li-footer-icon{
   display: flex;
   align-items: center;
@@ -385,7 +395,6 @@ a {
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  margin-right: 20px;
 }
 .li-footer-icon:hover{
   background: var(--accent-color);
@@ -454,11 +463,10 @@ a {
   flex-wrap: wrap;
 }
 .ulexampales .item{
-  margin-right: 28px;
-  margin-bottom: 28px; 
+  margin-right: 30px;
+  margin-bottom: 30px; 
 }
 .ulexampales .item:hover{
-  border: 1px solid #EEEEEE;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .ulexampales .item:nth-child(3n){
